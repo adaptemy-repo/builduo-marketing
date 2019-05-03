@@ -4,7 +4,8 @@
   "description": "A marketing page for the buildup product",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress open",
+    "start": "http-server ./src -o -p8007" 
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/adaptemy-repo/buildup-marketing/issues"
   },
-  "homepage": "https://github.com/adaptemy-repo/buildup-marketing#readme"
+  "homepage": "https://github.com/adaptemy-repo/buildup-marketing#readme",
+  "devDependencies": {
+    "cypress": "^3.2.0"
+  }
 }
