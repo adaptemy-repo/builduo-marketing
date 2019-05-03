@@ -1,0 +1,19 @@
+{
+  "name": "buildup-marketing",
+  "version": "1.0.0",
+  "description": "A marketing page for the buildup product",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adaptemy-repo/buildup-marketing.git"
+  },
+  "author": "Adaptemy",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/adaptemy-repo/buildup-marketing/issues"
+  },
+  "homepage": "https://github.com/adaptemy-repo/buildup-marketing#readme"
+}
