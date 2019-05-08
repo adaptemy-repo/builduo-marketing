@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "test": "cypress open",
-    "start": "http-server ./src -o -p8007" 
+    "start": "http-server ./src -o -p8007",
+    "deploy": "aws s3 sync src/. s3://buildup.ie/ && aws cloudfront create-invalidation --distribution-id E28OLFSH8MWY8T   --paths '/*'"
   },
   "repository": {
     "type": "git",
