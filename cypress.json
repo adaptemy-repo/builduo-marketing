@@ -1,1 +1,6 @@
-{}
+{
+  "baseUrl": "http://localhost:8007",
+  "defaultCommandTimeout": 12000,
+  "numTestsKeptInMemory": 20,
+  "video": false
+}
