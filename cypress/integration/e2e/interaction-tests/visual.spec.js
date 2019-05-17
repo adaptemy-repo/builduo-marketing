@@ -44,7 +44,7 @@ describe('Inspect marketing site', function () {
     // image of student page
     cy.takeSnapshot('student', '[data-testing=student]')
 
-        cy.visit('/')
+    cy.visit('/')
     cy.get('[data-testing=is-dd-open]')
       .should('exist')
       .click( {forse: true} )
@@ -58,5 +58,20 @@ describe('Inspect marketing site', function () {
     // image of purchase page
     cy.takeSnapshot('purchase', '[data-testing=purchase]')
 
+    cy.visit('/marketing/terms-and-conditions')
+
+    cy.url()
+      .should('include', 'terms-and-conditions')
+
+    // image of purchase page
+    cy.takeSnapshot('terms-and-conditions', '[data-testing=terms-and-conditions]')
+
+    cy.visit('/marketing/cookies')
+
+    cy.url()
+      .should('include', 'cookies')
+
+    // image of purchase page
+    cy.takeSnapshot('cookies', '[data-testing=cookies]')
   })
 })
