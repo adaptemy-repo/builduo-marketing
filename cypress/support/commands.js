@@ -17,7 +17,8 @@ addMatchImageSnapshotCommand({
   failureThreshold: 0,
   failureThresholdType: 'percent',
   customDiffConfig: { threshold: 0 },
-  capture: 'viewport',
+  capture: 'fullPage',
+  clip: null,
   customDiffDir: 'cypress/visual-test-reports/snap_errors/',
   blackout: ['[data-testing=blackout]']
 })
