@@ -5,5 +5,6 @@
 `npm install`
 
 `npm test`
+`npm test:visual`
 
 `npm start`

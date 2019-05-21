@@ -2,3 +2,9 @@
 .DS_Store
 *.log
 node_modules
+package-lock.json
+!/src/preview/**/*.css
+!/cypress/visual-test-reports/**/*.css
+cypress/videos/
+cypress/screenshots/
+cypress/visual-test-reports/snap_errors/

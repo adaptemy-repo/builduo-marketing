@@ -29,11 +29,11 @@
    </head>
    <body id="homepage">
       <header id="header" class="padding-standard line-height-normal">
-         <a class="main-logo pull-left center-vertically" href="/"></a> <a class="center-vertically btn-1 margin-l pull-right hide-on-sm-screen ng-binding" href="/app/#/login">Log in</a> <a class="center-vertically margin-lr btn-2 pull-right hide-on-sm-screen ng-binding" href="/app/#/common/signup">Sign up</a> <a href="/marketing/purchase" class="margin-lr btn-3 pull-right hide-on-sm-screen center-vertically ng-scope ng-binding">Purchase</a> <a href="/app/#/sso-authentication/token/b19ee0aa1189daabc60790ae887c8e32/type/Bearer/ttl/999999" class="margin-lr btn-3 pull-right hide-on-sm-screen center-vertically ng-scope ng-binding">Preview</a> <a href="/marketing/student" class="margin-lr btn-3 pull-right hide-on-sm-screen center-vertically ng-scope ng-binding">Student</a> <a href="/marketing/teacher" class="center-vertically margin-lr btn-3 pull-right hide-on-sm-screen ng-scope ng-binding">Teacher</a>
+         <a class="main-logo pull-left center-vertically" data-testing="main-logo" href="/"></a> <a class="center-vertically btn-1 margin-l pull-right hide-on-sm-screen ng-binding" href="/app/#/login">Log in</a> <a class="center-vertically margin-lr btn-2 pull-right hide-on-sm-screen ng-binding" href="/app/#/common/signup">Sign up</a> <a href="/marketing/purchase" class="margin-lr btn-3 pull-right hide-on-sm-screen center-vertically ng-scope ng-binding">Purchase</a> <a href="/app/#/sso-authentication/token/b19ee0aa1189daabc60790ae887c8e32/type/Bearer/ttl/999999" class="margin-lr btn-3 pull-right hide-on-sm-screen center-vertically ng-scope ng-binding">Preview</a> <a href="/marketing/student" class="margin-lr btn-3 pull-right hide-on-sm-screen center-vertically ng-scope ng-binding">Student</a> <a href="/marketing/teacher" class="center-vertically margin-lr btn-3 pull-right hide-on-sm-screen ng-scope ng-binding">Teacher</a>
          <span class="sm-screen-dropdown-outer pull-right hide-on-lg-screen">
             <span class="sm-screen-dropdown-inner clear-group">
                <input type="checkbox" class="hide" id="is-dd-open">
-               <label for="is-dd-open" class="pull-right dd-label sm-screen-menu-btn">
+               <label for="is-dd-open" class="pull-right dd-label sm-screen-menu-btn" data-testing="is-dd-open">
                   <div class="center-text">
                      <div>
                         <svg width="1.5em" height="2.5em" id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 20" enable-background="new 0 0 30 20" xml:space="preserve" class="ng-scope">
@@ -46,10 +46,10 @@
                   </div>
                </label>
                <ul class="clearfix dd">
-                  <li><a href="/marketing/teacher">Teacher</a></li>
-                  <li><a href="/marketing/student">Student</a></li>
+                  <li data-testing="burger-teacher"><a href="/marketing/teacher">Teacher</a></li>
+                  <li data-testing="burger-student"><a href="/marketing/student">Student</a></li>
                   <li><a href="/app/#/sso-authentication/token/b19ee0aa1189daabc60790ae887c8e32/type/Bearer/ttl/999999">Preview content</a></li>
-                  <li><a href="/marketing/purchase">Purchase</a></li>
+                  <li data-testing="burger-purchase"><a href="/marketing/purchase">Purchase</a></li>
                   <li class="li-divider"><a href="/app/#/common/signup"><em>Sign up</em></a></li>
                   <li class="li-divider"><a href="/app/#/login"><em>Log in</em></a></li>
                </ul>

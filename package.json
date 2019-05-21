@@ -5,7 +5,9 @@
   "main": "index.html",
   "scripts": {
     "test": "cypress open",
-    "start": "http-server ./src -o -p8007",
+    "test:visual": "rm -rf cypress/visual-test-reports/snap_errors && cypress run --config integrationFolder=cypress/integration/e2e --env isVRTRunning=true,failOnSnapshotDiff=false; sh visual.sh && http-server ./cypress/visual-test-reports/ -o",
+    "test:visual:ui": "rm -rf cypress/visual-test-reports/snap_errors && cypress open --config integrationFolder=cypress/integration/e2e --env isVRTRunning=true,failOnSnapshotDiff=false; sh visual.sh && http-server ./cypress/visual-test-reports/ -o",    "start": "http-server ./src -o -p8007",
+    "test:visual-reset": "rm -rf cypress/snapshots && cypress run --config integrationFolder=cypress/integration/e2e --env updateSnapshots=true,isVRTRunning=true",
     "deploy": "aws s3 sync src/. s3://buildup.ie/ && aws cloudfront create-invalidation --distribution-id E28OLFSH8MWY8T   --paths '/*'"
   },
   "repository": {
@@ -19,6 +21,7 @@
   },
   "homepage": "https://github.com/adaptemy-repo/buildup-marketing#readme",
   "devDependencies": {
-    "cypress": "^3.2.0"
+    "cypress": "^3.2.0",
+    "cypress-image-snapshot": "^3.0.1"
   }
 }
