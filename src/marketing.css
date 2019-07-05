@@ -2480,6 +2480,9 @@ button:focus {
 	#footer .publisher-logo {
 		display: block
 	}
+	#footer .adaptemy-logo img {
+		width: 128px;
+	}
 	#footer .publisher-logo {
 		margin-bottom: 1em
 	}
@@ -2502,6 +2505,9 @@ button:focus {
 	}
 	#footer .adaptemy-logo {
 		float: right
+	}
+	#footer .adaptemy-logo img {
+		width: 128px;
 	}
 }
 
